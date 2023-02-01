@@ -1,0 +1,107 @@
+
+
+
+1. Introduction:
+A census is the procedure of systematically acquiring and recording information about the members of a given population. 
+The census is a special, wide-range activity, which takes place once a decade in the entire country. The purpose is to gather 
+information about the general population, in order to present a full and reliable picture of the population in the country - its housing conditions and 
+demographic, social and economic characteristics. The information collected includes data on age, gender, country of origin, 
+marital status, housing conditions, marriage, education, employment, etc.
+
+
+2. Data description
+This data was extracted from the 1994 Census bureau database by Ronny Kohavi and Barry Becker (Data Mining and Visualization, Silicon Graphics). 
+The prediction task is to determine whether a person makes over $50K a year.
+
+
+3. Features Description
+
+a). Categorical Attributes
+
+# workclass: Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay, Never-worked.
+
+# education: Bachelors, Some-college, 11th, HS-grad, Prof-school, Assoc-acdm, Assoc-voc, 9th, 7th-8th, 12th, Masters, 1st-4th, 10th, Doctorate, 5th-6th, Preschool.
+
+# marital-status: Married-civ-spouse, Divorced, Never-married, Separated, Widowed, Married-spouse-absent, Married-AF-spouse.
+
+# occupation: Tech-support, Craft-repair, Other-service, Sales, Exec-managerial, Prof-specialty, Handlers-cleaners, Machine-op-inspct, Adm-clerical, Farming-fishing, Transport-moving, 
+                     Priv-house-serv, Protective-serv, Armed-Forces.
+
+# relationship: Wife, Own-child, Husband, Not-in-family, Other-relative, Unmarried.
+
+# race: White, Asian-Pac-Islander, Amer-Indian-Eskimo, Other, Black.
+
+# sex: Female, Male.
+
+# native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, 
+Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, 
+Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands.
+
+
+
+b)  Continuous Attributes
+
+# age: Age of an individual.
+               
+# fnlwgt: final weight.
+   The weights on the CPS files are controlled to independent estimates of the civilian noninstitutional population of the US.
+   These are prepared monthly for us by Population Division here at the Census Bureau.
+
+# capital-gain.
+
+# capital-loss.
+
+# hours-per-week.
+
+
+4. Overall Summary
+After understanding the problem statement, which is To calculate if the individual earns more than 50,000 dollars annually or less than 50,000 dollars annually,
+I make an assumption: the currency is in US dollars, and the period is one year.
+The Numbers of Rows and Columns in this data set are: 48,842 rows and 15 columns respectively.
+Important Data Insights:
+a) The dataset contains the most people between the ages of 31 to 36. 
+b) According to figure on age and income, the majority of those who earn more than 50,000 dollars annually are between the ages of 30 and 50, 
+    while those who earn less than 50,000 dollars annually are between the ages of 17 and 45.
+c) In comparison to other government departments, federal employees earn more than 50,000 dollars annually.
+d) There are extremely few females in the government sector that make more than 50,000 dollars annually.
+e) According to the distribution, the majority of persons have completed high school, while just a small percentage hold a master's or doctoral degree.
+f) The significant correlation that can be observed is that as a person completes higher level studies, their ability to earn an more than 50,000 dollars annually increases.
+g) There are more men in the never married and married civilian spouse categories than there are women, who are more likely to be widowed, separated, or divorced.
+    In the group of married spouses not present, both men and women are equal.
+h) People earn more money in desk jobs than in physically active jobs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
